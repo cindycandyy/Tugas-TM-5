@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<style>
+  /* Font Import (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #e74c3c;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a.current,
+nav ul li a:hover {
+    color: #e74c3c;
+}
+
+/* Main Section */
+section.courses {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+article {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+article figure {
+    margin-bottom: 15px;
+}
+
+article iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+article hgroup h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e74c3c;
+    margin-bottom: 5px;
+}
+
+article hgroup h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Sidebar Styling */
+aside {
+    margin-top: 50px;
+}
+
+aside section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+aside h2 {
+    color: #e74c3c;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+aside a {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+aside a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+aside .Contact-Details p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-top: 3px solid #e74c3c;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    section.courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+
+</style>
+<html>
+    <header>
+        <h1> Cafetaria Teknik Informatika</h1>
+        <nav>
+            <ul>
+                <li><a href="" class="current">Home</a></li>
+                <li><a href="" >Menu</a></li>
+                <li><a href="" >About</a></li>
+                <li><a href="" >Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="courses">
+        <article>
+            <figure>
+                <iframe src="https://assets.pinterest.com/ext/embed.html?id=589197563779663801" height="664" width="345" frameborder="0"
+                    scrolling="no"></iframe>
+                <figcaption>Kwetiaw Medan</figcaption>
+            </figure>
+            <hgRoup>
+                <h2>Kwetiaw</h2>
+                <h3>Mie Pipih</h3>
+            </hgRoup>
+            <p>Kwetiaw adalah makanan yang berasal dari medan, mienya menggunakan mie pipih dan diberi taburan ayam</p>
+        </article>
+
+        <article>
+            <figure>
+                <iframe src="https://assets.pinterest.com/ext/embed.html?id=506866133072646891" height="445" width="345" frameborder="0"
+                    scrolling="no"></iframe>
+                <figcaption>Nasi Gila Pedas</figcaption>
+            </figure>
+            <hgroup>
+                <h2>Nasi Gila</h2>
+            </hgroup>
+            <p>Nasi gila adalah hidangan khas Indonesia yang terbuat dari nasi putih yang dihidangkan bersama berbagai macam bahan
+            seperti sosis, sayuran, daging, dan bumbu-bumbu.</p>
+        </article>
+
+        <article>
+            <figure>
+                <iframe src="https://assets.pinterest.com/ext/embed.html?id=1117948307497186112" height="532" width="345"
+                    frameborder="0" scrolling="no"></iframe>
+                <figcaption>Steak Ayam</figcaption>
+            </figure>
+            <hgroup>
+                <h2>Steak Ayam</h2>
+            </hgroup>
+            <p>Steak ayam adalah hidangan lezat berupa potongan daging ayam yang dimasak dengan cara dipanggang atau digoreng.
+            Dagingnya yang lembut dan juicy, disajikan dengan berbagai macam saus dan ditemani kentang goreng atau sayuran,
+            menjadikannya hidangan yang populer.</p>
+        </article>
+
+        <article>
+            <figure>
+                <iframe src="https://assets.pinterest.com/ext/embed.html?id=26247610322351956" height="445" width="345" frameborder="0"
+                    scrolling="no"></iframe>
+                <figcaption>Nasi Campur</figcaption>
+            </figure>
+            <hgroup>
+                <h2>Nasi Campur</h2>
+            </hgroup>
+            <p>Nasi campur adalah hidangan khas Indonesia yang terdiri dari nasi putih dan berbagai macam lauk pauk. Lauknya bisa
+            berupa daging, ayam, telur, sayur, dan berbagai macam sambal. Kombinasi lauk yang beragam membuat nasi campur menjadi
+            hidangan yang kaya rasa dan mengenyangkan.</p>
+        </article>
+
+        <article>
+            <figure>
+                <iframe src="https://assets.pinterest.com/ext/embed.html?id=506092076891030541" height="445" width="345" frameborder="0" scrolling="no" ></iframe>
+                <figcaption>Tempe Penyet</figcaption>
+            </figure>
+            <hgroup>
+                <h2>Tempe Penyet</h2>
+            </hgroup>
+            <p>Tempe penyet adalah hidangan khas Indonesia yang terbuat dari tempe goreng yang dipenyet di atas sambal. Rasanya yang
+            pedas dan gurih membuat makanan ini sangat populer.</p>
+        </article>
+        
+        <article>
+            <figure>
+                <iframe src="https://assets.pinterest.com/ext/embed.html?id=150307706312108996" height="532" width="345" frameborder="0"
+                    scrolling="no"></iframe>
+                <figcaption>Batagor</figcaption>
+            </figure>
+            <hgroup>
+                <h2>Batagor</h2>
+            </hgroup>
+            <p>Batagor adalah makanan khas Bandung yang terbuat dari adonan ikan yang digoreng dan disajikan dengan saus kacang.
+            Rasanya gurih dan sedikit pedas.</p>
+        </article>
+    </section>
+
+    <aside>
+        <section class="popular-recipes">
+            <h2>Masakan Populer</h2>
+            <a href="">Nasi Goreng</a>
+            <a href="">Bakso</a>
+            <a href="">Pangsit</a>
+            <a href="">Soto</a>
+        </section>
+        <section class="Contact-Details">
+            <h2>Contact</h2>
+            <p>Cafetaria Teknik Informatika. Jl Teknik Informatika</p>
+        </section>
+    </aside>
+
+    
+    <footer>
+        &copy; 2024 Cafetaria Teknik Informatika
+    </footer>
+</html>
